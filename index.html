@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8">
+        <script type="text/javascript" src="./js/script.js" defer></script>
+        <title>
+            Table Example
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <h1>Table Example</h1>
+
+        <p>
+            <strong>
+                Your assignment:
+            </strong> 
+            Create a form with (4) fields and a button. When the submit event occurs, add the entered data into a new row (tr) full of data (td) in the table's body (tbody).
+        </p>
+
+        <form id="table-form" action="#" method="get">
+            <h2>
+                <label for="name">
+                    Enter Name:
+                    <input type="text" name="age" id="name">
+                </label>
+
+                <label for="age">
+                    Enter Age:
+                    <input type="number" name="age" id="age">
+                </label>
+
+                <label for="school-class">
+                    Enter School Class:
+                    <input type="text" name="school-class" id="school-class">
+                </label>
+
+                <label for="city">
+                    Enter city:
+                    <input type="city" name="city" id="city">
+                </label>
+
+                <button type="submit">Submit</button>
+                
+            </h2>
+
+        </form>
+
+
+        <table><!-- Open your table... -->
+            <thead><!-- Open the table head... -->
+                <tr><!-- Start a row... -->
+                    <th>Name</th><!-- Enter a heading per column... -->
+                    <th>Age</th>
+                    <th>School Class</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            
+            <tbody id="table-body"><!-- Table body contains your data! -->
+                <tr><!-- Each row requires a "tr". -->
+                    <td>Bob</td><!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
+                    <td>30</td>
+                    <td>Programming</td>
+                    <td>Edmonton</td>
+                    <td><button>Delete Row</button></td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>52</td>
+                    <td>Swimming</td>
+                    <td>Calgary</td>
+                    <td><button>Delete Row</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </body>
+</html>
+
+            
